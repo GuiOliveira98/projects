@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Cursor } from "./Cursor";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="App" style={{ cursor: "none" }}>
+      <header className="App-header" style={{ height: 2000 }}>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {Math.random()}
       </header>
+      <Cursor />
     </div>
   );
 }
